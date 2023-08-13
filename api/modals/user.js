@@ -11,6 +11,7 @@ const userSchema = mongoose.Schema({
     dateOfBirth: { type: Date, required: true },
     username: { type: String, required: true },
     height: { type: Number, required: true },
+    forgotToken: {type : String, default : ""},
 });
 
 module.exports = mongoose.model('User', userSchema);
