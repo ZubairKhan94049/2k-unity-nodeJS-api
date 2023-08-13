@@ -1,8 +1,8 @@
 {
     "env" : {
-        "MONGO_ATLAS_PW" :  "BTYTvkUdoNwqVD1q",
-        "JWT_KEY" : "zainabkhalid",
-        "SMPT_EMAIL" : "zubairkhan94049@gmail.com",
-        "SMPT_KEY" : "vphrbkvadpbydqnu"
+        "MONGO_ATLAS_PW" :  "Enter MongoAtlas Pass",
+        "JWT_KEY" : "enteryourbcryptkey",
+        "SMPT_EMAIL" : "youremail@gmail.com",
+        "SMPT_KEY" : "EnTER YOUR SMPT_EMAIL KEY 16 DIGIT"
     }
 }

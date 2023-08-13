@@ -5,9 +5,10 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 const usersRoutes = require("./api/routes/users");
+const notificationRoutes = require("./api/routes/notificationsRoute");
 
 
-mongoose.connect("mongodb+srv://zubikhan:"+process.env.MONGO_ATLAS_PW+"@cluster0.crt70hd.mongodb.net/?retryWrites=true&w=majority", 
+mongoose.connect("mongodb+srv://zanikhalid:"+process.env.MONGO_ATLAS_PW+"@cluster0.crt70hd.mongodb.net/?retryWrites=true&w=majority", 
 {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -34,6 +35,7 @@ app.use((req, res, next)=>{
 }); 
 
 app.use('/users', usersRoutes);
+app.use('/notifications', notificationRoutes);
 
 app.use((req, res, next)=>{
     const error = new Error("Not Found, Check your resquest method");

@@ -1,5 +1,5 @@
 const { default: mongoose } = require("mongoose");
-const User = require("../modals/user");
+const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const nodeMailer = require("nodemailer");
 const randomString = require("randomstring");
