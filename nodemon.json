@@ -1,6 +1,8 @@
 {
     "env" : {
         "MONGO_ATLAS_PW" :  "BTYTvkUdoNwqVD1q",
-        "JWT_KEY" : "zainabkhalid"
+        "JWT_KEY" : "zainabkhalid",
+        "SMPT_EMAIL" : "zubairkhan94049@gmail.com",
+        "SMPT_KEY" : "vphrbkvadpbydqnu"
     }
 }
