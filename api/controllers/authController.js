@@ -16,12 +16,19 @@ module.exports = {
                             error: err,
                         });
                     } else {
-                        const user = new User({
+                        const newUser = new User({
                             _id: new mongoose.Types.ObjectId(),
+                            firstName: req.body.firstName,
+                            lastName: req.body.lastName,
                             email: req.body.email,
                             password: hash,
+                            gender: req.body.gender,
+                            country: req.body.country,
+                            dateOfBirth: new Date(req.body.dateOfBirth),
+                            username: req.body.username,
+                            height: req.body.height,
                         });
-                        user.save()
+                        newUser.save()
                             .then(result => {
                                 res.status(201).json({
                                     message: "User created",
@@ -107,5 +114,7 @@ module.exports = {
             })
         });
     },
+
+    
 
 }
